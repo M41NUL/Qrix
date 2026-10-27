@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  File   : bg_handle.xml
+  Owner  : MAINUL (CODEX-M41NUL)
+  GitHub : M41NUL
+  About  : Update popup drag handle
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/qx_outline" />
+    <corners android:radius="2dp" />
+</shape>
