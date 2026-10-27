@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/qx_primary</item>
+        <item name="colorOnPrimary">@color/qx_on_primary</item>
+        <item name="colorPrimaryContainer">@color/qx_soft</item>
+        <item name="colorOnPrimaryContainer">@color/qx_text</item>
+        <item name="colorSecondaryContainer">@color/qx_indicator</item>
+        <item name="colorOnSecondaryContainer">@color/qx_text</item>
+        <item name="colorSurface">@color/qx_card</item>
+        <item name="colorOnSurface">@color/qx_text</item>
+        <item name="colorOnSurfaceVariant">@color/qx_text2</item>
+        <item name="colorOutline">@color/qx_outline</item>
+        <item name="android:colorBackground">@color/qx_bg</item>
+        <item name="android:statusBarColor">@color/qx_bg</item>
+        <item name="android:navigationBarColor">@color/qx_nav</item>
+        <item name="android:windowLightStatusBar">@bool/qx_light_bars</item>
+        <item name="android:colorControlHighlight">@android:color/transparent</item>
+        <item name="android:colorControlActivated">@color/qx_accent</item>
+        <item name="android:textColorHighlight">@color/qx_indicator</item>
+        <item name="materialButtonStyle">@style/Qx.Button</item>
+        <item name="materialButtonOutlinedStyle">@style/Qx.Button.Outlined</item>
+        <item name="bottomNavigationStyle">@style/Qx.BottomNav</item>
+        <item name="materialSwitchStyle">@style/Qx.Switch</item>
+        <item name="colorSurfaceContainer">@color/qx_card</item>
+        <item name="colorSurfaceContainerHigh">@color/qx_card</item>
+        <item name="colorSurfaceContainerHighest">@color/qx_soft</item>
+        <item name="colorSurfaceVariant">@color/qx_soft</item>
+        <item name="colorOutlineVariant">@color/qx_outline</item>
+        <item name="colorSecondary">@color/qx_accent</item>
+        <item name="colorTertiary">@color/qx_gold</item>
+    </style>
+
+    <style name="AppTheme" parent="Base.AppTheme" />
+
+    <!-- Buttons: no ripple, no raised shadow, no press animation -->
+    <style name="Qx.Button" parent="Widget.Material3.Button">
+        <item name="rippleColor">@android:color/transparent</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="elevation">0dp</item>
+    </style>
+    <style name="Qx.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="rippleColor">@android:color/transparent</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <!-- Toggle: clear on / off states in both light and dark -->
+    <style name="Qx.Switch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="thumbTint">@color/sw_thumb</item>
+        <item name="trackTint">@color/sw_track</item>
+        <item name="trackDecorationTint">@color/sw_stroke</item>
+    </style>
+
+    <!-- Bottom tabs: no ripple, no shadow, keeps the soft active pill -->
+    <style name="Qx.BottomNav" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemRippleColor">@android:color/transparent</item>
+        <item name="elevation">0dp</item>
+        <item name="itemIconTint">@color/nav_item</item>
+        <item name="itemTextColor">@color/nav_item</item>
+    </style>
+
+    <!-- Splash screen (shown while the app starts) -->
+    <style name="Theme.Qrix.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/qx_splash</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo</item>
+        <item name="windowSplashScreenAnimationDuration">400</item>
+        <item name="postSplashScreenTheme">@style/AppTheme</item>
+    </style>
+
+    <!-- Camera screen: follows light / dark -->
+    <style name="Theme.Qrix.Scan" parent="AppTheme">
+        <item name="android:statusBarColor">@color/qx_scan_bg</item>
+        <item name="android:navigationBarColor">@color/qx_scan_bg</item>
+        <item name="android:windowLightStatusBar">@bool/qx_light_bars</item>
+    </style>
+
+    <!-- Small text / row styles -->
+    <style name="Qx.Section" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/qx_text2</item>
+    </style>
+
+    <style name="Qx.Row" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="Qx.RowIcon" parent="">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="tint">@color/qx_accent</item>
+    </style>
+
+    <style name="Qx.RowTitle" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/qx_text</item>
+    </style>
+
+    <style name="Qx.RowSub" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/qx_text2</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <style name="Qx.Divider" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginStart">44dp</item>
+        <item name="android:background">@color/qx_outline</item>
+    </style>
+</resources>
