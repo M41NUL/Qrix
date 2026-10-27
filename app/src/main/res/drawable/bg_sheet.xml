@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  File   : bg_sheet.xml
+  Owner  : MAINUL (CODEX-M41NUL)
+  GitHub : M41NUL
+  About  : Update popup sheet background (rounded top)
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/qx_card" />
+    <corners
+        android:topLeftRadius="24dp"
+        android:topRightRadius="24dp" />
+</shape>
