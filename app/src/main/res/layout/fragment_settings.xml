@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/qx_bg"
+    android:fillViewport="true"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="18dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textColor="@color/qx_text"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!-- Appearance -->
+        <TextView
+            style="@style/Qx.Section"
+            android:text="Appearance" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_plain"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/rowTheme"
+                style="@style/Qx.Row">
+
+                <ImageView
+                    style="@style/Qx.RowIcon"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_palette" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Qx.RowTitle"
+                        android:text="Theme" />
+
+                    <TextView
+                        android:id="@+id/txtTheme"
+                        style="@style/Qx.RowSub"
+                        android:text="System default" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_chevron"
+                    app:tint="@color/qx_text2" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Scanning -->
+        <TextView
+            style="@style/Qx.Section"
+            android:text="Scanning" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_plain"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/rowVibrate"
+                style="@style/Qx.Row">
+
+                <ImageView
+                    style="@style/Qx.RowIcon"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_vibration" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Qx.RowTitle"
+                        android:text="Vibrate on scan" />
+
+                    <TextView
+                        style="@style/Qx.RowSub"
+                        android:text="Short buzz when a code is found" />
+                </LinearLayout>
+
+                <com.google.android.material.materialswitch.MaterialSwitch
+                    android:id="@+id/switchVibrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View style="@style/Qx.Divider" />
+
+            <LinearLayout
+                android:id="@+id/rowAutoZoom"
+                style="@style/Qx.Row">
+
+                <ImageView
+                    style="@style/Qx.RowIcon"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_zoom" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Qx.RowTitle"
+                        android:text="Auto zoom" />
+
+                    <TextView
+                        style="@style/Qx.RowSub"
+                        android:text="Zoom in automatically on small or far codes" />
+                </LinearLayout>
+
+                <com.google.android.material.materialswitch.MaterialSwitch
+                    android:id="@+id/switchAutoZoom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View style="@style/Qx.Divider" />
+
+            <LinearLayout
+                android:id="@+id/rowAutoFlash"
+                style="@style/Qx.Row">
+
+                <ImageView
+                    style="@style/Qx.RowIcon"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_flash_on" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Qx.RowTitle"
+                        android:text="Auto flash" />
+
+                    <TextView
+                        style="@style/Qx.RowSub"
+                        android:text="Turn the torch on automatically in the dark" />
+                </LinearLayout>
+
+                <com.google.android.material.materialswitch.MaterialSwitch
+                    android:id="@+id/switchAutoFlash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View style="@style/Qx.Divider" />
+
+            <LinearLayout
+                android:id="@+id/rowSave"
+                style="@style/Qx.Row">
+
+                <ImageView
+                    style="@style/Qx.RowIcon"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_save_history" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Qx.RowTitle"
+                        android:text="Save scan history" />
+
+                    <TextView
+                        style="@style/Qx.RowSub"
+                        android:text="Keep scanned codes in History" />
+                </LinearLayout>
+
+                <com.google.android.material.materialswitch.MaterialSwitch
+                    android:id="@+id/switchSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Data -->
+        <TextView
+            style="@style/Qx.Section"
+            android:text="Data" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_plain"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/rowClearScans"
+                style="@style/Qx.Row">
+
+                <ImageView
+                    style="@style/Qx.RowIcon"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_delete" />
+
+                <TextView
+                    style="@style/Qx.RowTitle"
+                    android:text="Clear scan history" />
+            </LinearLayout>
+
+            <View style="@style/Qx.Divider" />
+
+            <LinearLayout
+                android:id="@+id/rowClearGenerated"
+                style="@style/Qx.Row">
+
+                <ImageView
+                    style="@style/Qx.RowIcon"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_delete" />
+
+                <TextView
+                    style="@style/Qx.RowTitle"
+                    android:text="Clear generated codes" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- About -->
+        <TextView
+            style="@style/Qx.Section"
+            android:text="About" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_plain"
+            android:orientation="vertical">
+
+            <!-- App: logo, name, version -->
+            <LinearLayout
+                style="@style/Qx.Row"
+                android:clickable="false"
+                android:focusable="false"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp">
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginEnd="12dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_brand_mark" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Qx.RowTitle"
+                        android:text="Qrix"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/Qx.RowSub"
+                        android:text="QR and barcode scanner" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtVersion"
+                    style="@style/Qx.RowSub"
+                    android:layout_marginTop="0dp"
+                    android:text="Version 1.0.0" />
+            </LinearLayout>
+
+            <View style="@style/Qx.Divider" android:layout_marginStart="12dp" />
+
+            <!-- Check for updates (UI only for now, backend comes later) -->
+            <LinearLayout
+                style="@style/Qx.Row"
+                android:clickable="false"
+                android:focusable="false">
+
+                <ImageView
+                    style="@style/Qx.RowIcon"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_update" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Qx.RowTitle"
+                        android:text="Check for updates"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtVersionSub"
+                        style="@style/Qx.RowSub"
+                        android:text="Version 1.0.0" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btnCheckUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_pill_action"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:minWidth="84dp"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:text="Check"
+                    android:textColor="@color/qx_on_primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View style="@style/Qx.Divider" android:layout_marginStart="12dp" />
+
+            <!-- Developer -->
+            <LinearLayout
+                style="@style/Qx.Row"
+                android:clickable="false"
+                android:focusable="false">
+
+                <ImageView
+                    style="@style/Qx.RowIcon"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_person" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Qx.RowTitle"
+                        android:text="About Developer"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/Qx.RowSub"
+                        android:text="Mainul Islam" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/btnFacebook"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/bg_circle_soft"
+                    android:clickable="true"
+                    android:contentDescription="Facebook"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_facebook"
+                        app:tint="@color/qx_text" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/btnX"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_circle_soft"
+                    android:clickable="true"
+                    android:contentDescription="X"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_x"
+                        app:tint="@color/qx_text" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
