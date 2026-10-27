@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark: true black, charcoal cards, white ink. No accent colour. -->
+    <color name="qx_bg">#000000</color>
+    <color name="qx_card">#1C1C1E</color>
+    <color name="qx_nav">#000000</color>
+    <color name="qx_text">#FFFFFF</color>
+    <color name="qx_text2">#98989F</color>
+    <color name="qx_outline">#2C2C2E</color>
+    <color name="qx_primary">#5B9BFF</color>
+    <color name="qx_on_primary">#001A40</color>
+    <color name="qx_accent">#5B9BFF</color>
+    <color name="qx_soft">#13233F</color>
+    <color name="qx_indicator">#1B2F55</color>
+    <color name="qx_hero">#2563EB</color>
+    <color name="qx_splash">#000000</color>
+    <color name="qx_text_dim">#8E8E93</color>
+
+    <color name="qx_scan_bg">#000000</color>
+    <color name="qx_scan_surface">#1C1C1E</color>
+    <color name="qx_scan_frame">#0A0A0A</color>
+    <color name="qx_scan_accent">#5B9BFF</color>
+    <color name="qx_on_scan_accent">#001A40</color>
+    <color name="qx_scan_corner">#FFFFFF</color>
+    <color name="qx_scan_line">#3B82F6</color>
+    <color name="qx_scan_overlay">#F2000000</color>
+
+    <color name="qx_sw_on_thumb">#001A40</color>
+    <color name="qx_sw_on_track">#5B9BFF</color>
+    <color name="qx_sw_off_thumb">#6E6E73</color>
+    <color name="qx_sw_off_track">#1C1C1E</color>
+    <color name="qx_sw_off_stroke">#48484D</color>
+</resources>
