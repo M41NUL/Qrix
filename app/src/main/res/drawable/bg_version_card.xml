@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  File   : bg_version_card.xml
+  Owner  : MAINUL (CODEX-M41NUL)
+  GitHub : M41NUL
+  About  : Update popup current -> new version card
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/qx_bg" />
+    <corners android:radius="16dp" />
+</shape>
