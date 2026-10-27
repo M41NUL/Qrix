@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  File   : bg_dot.xml
+  Owner  : MAINUL (CODEX-M41NUL)
+  GitHub : M41NUL
+  About  : Update popup list bullet
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <solid android:color="@color/qx_accent" />
+</shape>
