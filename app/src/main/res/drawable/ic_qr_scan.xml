@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  File   : ic_qr_scan.xml
+  Owner  : MAINUL (CODEX-M41NUL)
+  GitHub : M41NUL
+  About  : Home "Scan QR / Barcode" button icon - Qrix logo mark, white on blue
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="44dp"
+    android:height="44dp"
+    android:viewportWidth="62"
+    android:viewportHeight="62">
+    <group android:translateX="-23" android:translateY="-23">
+    <path android:fillColor="#FFFFFFFF" android:fillType="evenOdd" android:pathData="M41,38h6a3,3 0 0 1 3,3v6a3,3 0 0 1 -3,3h-6a3,3 0 0 1 -3,-3v-6a3,3 0 0 1 3,-3zM42.5,41h3.0a1.5,1.5 0 0 1 1.5,1.5v3.0a1.5,1.5 0 0 1 -1.5,1.5h-3.0a1.5,1.5 0 0 1 -1.5,-1.5v-3.0a1.5,1.5 0 0 1 1.5,-1.5zM43.6,43h0.8a0.6,0.6 0 0 1 0.6,0.6v0.8a0.6,0.6 0 0 1 -0.6,0.6h-0.8a0.6,0.6 0 0 1 -0.6,-0.6v-0.8a0.6,0.6 0 0 1 0.6,-0.6z" />
+    <path android:fillColor="#FFFFFFFF" android:fillType="evenOdd" android:pathData="M61,38h6a3,3 0 0 1 3,3v6a3,3 0 0 1 -3,3h-6a3,3 0 0 1 -3,-3v-6a3,3 0 0 1 3,-3zM62.5,41h3.0a1.5,1.5 0 0 1 1.5,1.5v3.0a1.5,1.5 0 0 1 -1.5,1.5h-3.0a1.5,1.5 0 0 1 -1.5,-1.5v-3.0a1.5,1.5 0 0 1 1.5,-1.5zM63.6,43h0.8a0.6,0.6 0 0 1 0.6,0.6v0.8a0.6,0.6 0 0 1 -0.6,0.6h-0.8a0.6,0.6 0 0 1 -0.6,-0.6v-0.8a0.6,0.6 0 0 1 0.6,-0.6z" />
+    <path android:fillColor="#FFFFFFFF" android:fillType="evenOdd" android:pathData="M41,58h6a3,3 0 0 1 3,3v6a3,3 0 0 1 -3,3h-6a3,3 0 0 1 -3,-3v-6a3,3 0 0 1 3,-3zM42.5,61h3.0a1.5,1.5 0 0 1 1.5,1.5v3.0a1.5,1.5 0 0 1 -1.5,1.5h-3.0a1.5,1.5 0 0 1 -1.5,-1.5v-3.0a1.5,1.5 0 0 1 1.5,-1.5zM43.6,63h0.8a0.6,0.6 0 0 1 0.6,0.6v0.8a0.6,0.6 0 0 1 -0.6,0.6h-0.8a0.6,0.6 0 0 1 -0.6,-0.6v-0.8a0.6,0.6 0 0 1 0.6,-0.6z" />
+    <path android:fillColor="#FFFFFFFF" android:pathData="M59,58h2a1,1 0 0 1 1,1v2a1,1 0 0 1 -1,1h-2a1,1 0 0 1 -1,-1v-2a1,1 0 0 1 1,-1zM67,58h2a1,1 0 0 1 1,1v2a1,1 0 0 1 -1,1h-2a1,1 0 0 1 -1,-1v-2a1,1 0 0 1 1,-1zM63,62h2a1,1 0 0 1 1,1v2a1,1 0 0 1 -1,1h-2a1,1 0 0 1 -1,-1v-2a1,1 0 0 1 1,-1zM59,66h2a1,1 0 0 1 1,1v2a1,1 0 0 1 -1,1h-2a1,1 0 0 1 -1,-1v-2a1,1 0 0 1 1,-1zM67,66h2a1,1 0 0 1 1,1v2a1,1 0 0 1 -1,1h-2a1,1 0 0 1 -1,-1v-2a1,1 0 0 1 1,-1z" />
+    <path android:strokeColor="#FFFFFFFF" android:strokeWidth="4.5" android:strokeLineCap="round" android:strokeLineJoin="round" android:pathData="M28,40V36a8,8 0 0 1 8,-8H40 M68,28H72a8,8 0 0 1 8,8V40 M80,68V72a8,8 0 0 1 -8,8H68 M40,80H36a8,8 0 0 1 -8,-8V68" />
+    <path android:fillColor="#FFBFDBFE" android:pathData="M25,52h58a2,2 0 0 1 2,2v0a2,2 0 0 1 -2,2h-58a2,2 0 0 1 -2,-2v0a2,2 0 0 1 2,-2z" />
+    </group>
+</vector>
